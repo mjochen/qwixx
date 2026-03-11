@@ -19,6 +19,6 @@ jobs:
           dependency-path: Qwixx/pom.xml
 
       - name: Test with Maven
-        # run: mvn test -B
-        run: ./mvnw test -B
+        run: mvn test -B
+        # run: ./mvnw test -B
         working-directory: Qwixx
