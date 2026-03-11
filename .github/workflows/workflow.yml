@@ -17,11 +17,10 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
           dependency-path: Qwixx/pom.xml
-
-    #   - name: Test with Maven
-    #     run: mvn test -B
-    #     # run: ./mvnw test -B
-    #     working-directory: Qwixx
+      - name: Test with Maven
+        run: mvn test -B
+        # run: ./mvnw test -B
+        working-directory: Qwixx
 
   deliver-container:
     runs-on: ubuntu-latest
